@@ -1,0 +1,5 @@
+fastapi
+uvicorn[standard]
+chemdataextractor2>=2.0.0
+dawg-python
+lxml>=4.9.0
