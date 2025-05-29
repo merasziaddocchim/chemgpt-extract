@@ -12,8 +12,8 @@ def extract_chem_entities(input: TextInput):
     try:
         doc = Document(input.text)
         entities = {
-            "compounds": [c.text for c in doc.cems],
-            "properties": [p.text for p in doc.properties],
+            "compounds": [c.text for c in doc.cems]
+            # "properties" extraction is removed; v2.x requires custom parsers.
         }
         return {"success": True, "entities": entities}
     except Exception as e:
