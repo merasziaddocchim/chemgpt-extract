@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from chemdataextractor2 import Document
+from chemdataextractor import Document
 
 app = FastAPI(title="ChemGPT Extract Service")
 
